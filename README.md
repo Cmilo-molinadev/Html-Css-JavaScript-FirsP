@@ -6,7 +6,7 @@ In this curse you learn:
 * Html 
 	* labels - tags  **<></>**
 * Css 
-	* id, class and  different customs  **. # **
+	* id, class and  different customs   **. #**
 * JavaScript 
 	 * functions, is and if else ,POO  and more elements 
 
