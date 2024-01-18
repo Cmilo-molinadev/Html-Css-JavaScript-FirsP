@@ -15,23 +15,24 @@ function selectCreaturePj(){
     let octopuset = document.getElementById('octopuset');
     let talltree = document.getElementById('talltree');
     let mrfigth = document.getElementById('mrfigth');
+    let creatureSelected = document.getElementById('creature-pj')
 
     if (electrion.checked){
-        alert('Select Electrion');
+        creatureSelected.innerHTML = 'Electrion'; 
     }else if(snowda.checked){
-        alert('Select Snowda')
+        creatureSelected.innerHTML = 'Snowda'; 
     }else if (firecat.checked){
-        alert('Select Firecat')
+        creatureSelected.innerHTML = 'Firecat'; 
     }else if (fairy.checked){
-        alert('Select Fairy')
+        creatureSelected.innerHTML = 'Fairy'; 
     }else if (darkghost.checked){
-        alert('Select Darkghost')
+        creatureSelected.innerHTML = 'Darkghost'; 
     }else if (octopuset.checked){
-        alert('Select Octopuset')
+        creatureSelected.innerHTML = 'Octopused'; 
     }else if (talltree.checked){
-        alert('Select Talltree')
+        creatureSelected.innerHTML = 'Talltree'; 
     }else if (mrfigth.checked){
-        alert('Select Mr. Figth')
+        creatureSelected.innerHTML = 'Mr. Figth'; 
     }else{
         alert('Please select a creature')
     };
