@@ -27,34 +27,62 @@
     <!--The Second "Section": here is the seclect your creature with differents types-->
     <section id="Select-creature">
         <h2>Select your creature</h2>
+
+        <label for="electrion">Electrion</label>
+        <input type="radio" name="Creature"  id="electrion"></input>
+        <label for="snowda">Snowda</label>
+        <input type="radio" name="Creature"  id="snowda"></input>
+        <label for="firecat">Firecat</label>
+        <input type="radio" name="Creature"  id="firecat"></input>
+        <label for="fairy">Fairy</label>
+        <input type="radio" name="Creature"  id="fairy"></input>
+        <label for="darkghost">Darkghost</label>
+        <input type="radio" name="Creature"  id="darkghost"></input>
+        <label for="octopuset">Octopuset</label>
+        <input type="radio" name="Creature"  id="octopuset"></input>
+        <label for="talltree">Talltree</label>
+        <input type="radio" name="Creature"  id="talltree"></input>
+        <label for="mrfigth">Mr. Figth</label>
+        <input type="radio" name="Creature"  id="mrfigth"></input>
+        <!--Electrion -> Electric
+        Snowda -> Snow 
+        Firecat -> Fire 
+        Fairy -> Luminous
+        Darkghost -> Abyss 
+        Octopuset -> Wather
+        Talltree -> Plant 
+        Mr. Figth -> Geo-->
         <button id="Select-a-creauture">Select Creature</button>
     </section>
 
     <!--The Third "Section": here is the select attack with all attacks and his types-->
     <section id="Select-attack">
-        <p>Your creature have <span id="lives">5</span> lives</p>
-        <p>The enemy creature have <span id="lives-enemy">5</span> lives</p>
+        <p>Your creature is <span id="creature-pj"></span> and have <span id="lives">5</span> lives</p>
+        <p>The enemy creature is <span id="creture-pc"></span> and have <span id="lives-enemy">5</span> lives</p>
         <h2>Select your Attack</h2>
         <p>
-            <button>Electric ⚡</button>
-            <button>Snow ❄️</button>
-            <button>Fire 🔥</button>
-            <button>Luminous ⭐</button>
-            <button>Abyss 🌑</button>
-            <button>Wather 💧</button>
-            <button>Plant 🍀</button>
-            <button>Geo 🪨</button>
+            <button id="attack-electric">Electric ⚡</button>
+            <button id="attack-snow">Snow ❄️</button>
+            <button id="attack-fire">Fire 🔥</button>
+            <button id="attack-luminous">Luminous ⭐</button>
+            <button id="attack-abyss">Abyss 🌑</button>
+            <button id="attack-wather">Wather 💧</button>
+            <button id="attack-plant">Plant 🍀</button>
+            <button id="attack-geo">Geo 🪨</button>
         </p>
     </section>
+
     <!--This seccion is very special, this seccion is where we can see the notifications
     or the development of combat only edit with JavaScript-->
     <section id="notifications">
         <p>Here put the notifications of combat</p>
     </section>
+
     <!--Finaly game restar again-->
     <section id="empy">
         <button id="reload">Restar</button>
     </section>
+    
 </body>
 <footer>
     <h3>Created By :  GitHub <a href="https://github.com/Cmilo-molinadev"> @Cmilo-molinadev</a></h3>
