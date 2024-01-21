@@ -156,11 +156,11 @@ function createElements(){
     let notifications = document.getElementById('notifications');
     let pagraph = document.createElement('p');
     let pagraphEnemy = document.createElement('p');
-    let Champ = document.createElement('p');
+    let Champ = document.createElement('h2');
 
     pagraph.innerHTML = 'You tell your creature that attack with ' + attackSelectPj;
     pagraphEnemy.innerHTML = 'The enemy attacks with '+ attackSelectPc;
-    Champ.innerHTML = 'The combat is fhinishes ' + winners; 
+    Champ.innerHTML =  winners; 
 
 
     notifications.appendChild(pagraph);
@@ -172,22 +172,38 @@ function createElements(){
 function Combat(){
     if (attackSelectPc == attackSelectPj){
         winners = 'The combats is very hard the attacks is not efective';
-    }else if(attackSelectPc == 'Electric attack' && attackSelectPj == 'Fire attack'){  
-        winners ='Reaction of Electrocharged you lost 1 live';
-    }else if (attackSelectPc == 'Snow attack' && attackSelectPj == 'Luminous attack'){
-        winners = 'The Lominus neutralizes your attack of snow you lost 1 live'; 
-    }else if(attackSelectPc == 'Fire attack' && attackSelectPj == 'Abbysm attack'){
-        winners ='Your fire attack is very efective enemy lost 1 live'; 
-    }else  if (attackSelectPc == 'Luminous attack' && attackSelectPj == 'Wather attack'){
-        winners ='Your wather attack is neutral against th e luminus attak to enamy is tie'; 
-    }else if(attackSelectPc == 'Abbysm attack' && attackSelectPj == 'Plant attack' ){
-        winners ='The enemy attack is very efective against your plant attak is withered you lost 1 live'; 
-    }else if(attackSelectPc == 'Wather attack' && attackSelectPj == 'Geo attack'){
-        winners ='Your attack not is very efective against the wather attack you los 1 live';
-    }else if(attackSelectPc == 'Plant attack' && attackSelectPj == 'Electric attack'){
-        winners ='The electric attack is very efective against plant attack the enemy lost 1 live'; 
-    }else {
-        winners ='The enemy uses strong attack break your attack snow you lost 1 live'; 
+    }else if(attackSelectPj == 'Electric attack' && attackSelectPc == 'Fire attack'){  
+        winners ='Enemy Wins';
+    }else if (attackSelectPj == 'Snow attack' && attackSelectPc == 'Luminous attack'){
+        winners = 'Enemy wins'; 
+    }else if(attackSelectPj == 'Fire attack' && attackSelectPc == 'Abbysm attack'){
+        winners ='You Wins'; 
+    }else  if (attackSelectPj == 'Luminous attack' && attackSelectPc == 'Wather attack'){
+        winners ='The combats is very hard the attacks is not efective'; 
+    }else if(attackSelectPj == 'Abbysm attack' && attackSelectPc == 'Plant attack' ){
+        winners ='Enemy Wins'; 
+    }else if(attackSelectPj == 'Wather attack' && attackSelectPc == 'Geo attack'){
+        winners ='Enemy Wins';
+    }else if(attackSelectPj == 'Plant attack' && attackSelectPc == 'Electric attack'){
+        winners ='You Wins'; 
+    }else if (attackSelectPj == 'Geo attack' && attackSelectPc == 'Snow attack' ){
+        winners ='You Wins'; 
+    }else if (attackSelectPj =='Electric attack' && attackSelectPc == 'Geo attack'){
+        winners ='You Wins';
+    }else if (attackSelectPj == 'Snow attack' && attackSelectPc == 'Plant attack'){
+        winners ='You Wins';
+    }else if (attackSelectPj == 'Fire attack' && attackSelectPc == 'Wather attack'){
+        winners ='Enemy Wins';
+    }else if (attackSelectPj == 'Luminous attack' && attackSelectPc == 'Abbysm attack'){
+        winners = 'The combats is very hard the attacks is not efective';
+    }else if (attackSelectPj == 'Abbysm attack' && attackSelectPc == 'Luminous attack'){
+        winners ='The combats is very hard the attacks is not efective';
+    }else if (attackSelectPj == 'Wather attack' && attackSelectPc == 'Fire attack'){
+        winners = 'You Wins';
+    }else if (attackSelectPj == 'Plant attack' && attackSelectPc == 'Snow attack'){
+        winners = 'Enemy Wins';
+    }else if (attackSelectPj == 'Geo attack' && attackSelectPc == 'Electric attack'){
+        winners ='Enemy wins';
     }
     createElements();
 };
