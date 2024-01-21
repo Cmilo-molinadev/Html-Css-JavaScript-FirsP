@@ -1,6 +1,7 @@
 //Global variables 
 let attackSelectPj
 let attackSelectPc
+let winners
 //let attackSelectedPj = document.getElementById('attack-selected-pj');
 //let attackSelectedpc = document.getElementById('attack-selected-pc');
 
@@ -139,7 +140,7 @@ function attackAleatorieEnemy(){
         attackSelectPc = 'Fire attack';
     }else if(attackAleatories == 4){
         attackSelectPc = 'Luminous attack';
-    }else if(attackAleatories == 4){
+    }else if(attackAleatories == 5){
         attackSelectPc = 'Abbysm attack';
     }else if (attackAleatories == 6){
         attackSelectPc = 'Wather attack';
@@ -148,20 +149,64 @@ function attackAleatorieEnemy(){
     }else{
         attackSelectPc = 'Geo attack';
     };   
-    createElements();
+    Combat();
 };
 //Notifications of the comvbat in HTML 
 function createElements(){
     let notifications = document.getElementById('notifications');
     let pagraph = document.createElement('p');
     let pagraphEnemy = document.createElement('p');
+    let Champ = document.createElement('h2');
+
     pagraph.innerHTML = 'You tell your creature that attack with ' + attackSelectPj;
     pagraphEnemy.innerHTML = 'The enemy attacks with '+ attackSelectPc;
+    Champ.innerHTML =  winners; 
+
 
     notifications.appendChild(pagraph);
     notifications.appendChild(pagraphEnemy);
+    notifications.appendChild(Champ);
     
-}
+};
+// Combat of the game and logicstic of elements 
+function Combat(){
+    if (attackSelectPc == attackSelectPj){
+        winners = 'The combats is very hard the attacks is not efective';
+    }else if(attackSelectPj == 'Electric attack' && attackSelectPc == 'Fire attack'){  
+        winners ='Enemy Wins';
+    }else if (attackSelectPj == 'Snow attack' && attackSelectPc == 'Luminous attack'){
+        winners = 'Enemy wins'; 
+    }else if(attackSelectPj == 'Fire attack' && attackSelectPc == 'Abbysm attack'){
+        winners ='You Wins'; 
+    }else  if (attackSelectPj == 'Luminous attack' && attackSelectPc == 'Wather attack'){
+        winners ='The combats is very hard the attacks is not efective'; 
+    }else if(attackSelectPj == 'Abbysm attack' && attackSelectPc == 'Plant attack' ){
+        winners ='Enemy Wins'; 
+    }else if(attackSelectPj == 'Wather attack' && attackSelectPc == 'Geo attack'){
+        winners ='Enemy Wins';
+    }else if(attackSelectPj == 'Plant attack' && attackSelectPc == 'Electric attack'){
+        winners ='You Wins'; 
+    }else if (attackSelectPj == 'Geo attack' && attackSelectPc == 'Snow attack' ){
+        winners ='You Wins'; 
+    }else if (attackSelectPj =='Electric attack' && attackSelectPc == 'Geo attack'){
+        winners ='You Wins';
+    }else if (attackSelectPj == 'Snow attack' && attackSelectPc == 'Plant attack'){
+        winners ='You Wins';
+    }else if (attackSelectPj == 'Fire attack' && attackSelectPc == 'Wather attack'){
+        winners ='Enemy Wins';
+    }else if (attackSelectPj == 'Luminous attack' && attackSelectPc == 'Abbysm attack'){
+        winners = 'The combats is very hard the attacks is not efective';
+    }else if (attackSelectPj == 'Abbysm attack' && attackSelectPc == 'Luminous attack'){
+        winners ='The combats is very hard the attacks is not efective';
+    }else if (attackSelectPj == 'Wather attack' && attackSelectPc == 'Fire attack'){
+        winners = 'You Wins';
+    }else if (attackSelectPj == 'Plant attack' && attackSelectPc == 'Snow attack'){
+        winners = 'Enemy Wins';
+    }else if (attackSelectPj == 'Geo attack' && attackSelectPc == 'Electric attack'){
+        winners ='Enemy wins';
+    }
+    createElements();
+};
 
 
 
