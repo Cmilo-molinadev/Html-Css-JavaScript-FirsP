@@ -1,6 +1,7 @@
 //Global variables 
 let attackSelectPj
 let attackSelectPc
+let winners
 //let attackSelectedPj = document.getElementById('attack-selected-pj');
 //let attackSelectedpc = document.getElementById('attack-selected-pc');
 
@@ -139,7 +140,7 @@ function attackAleatorieEnemy(){
         attackSelectPc = 'Fire attack';
     }else if(attackAleatories == 4){
         attackSelectPc = 'Luminous attack';
-    }else if(attackAleatories == 4){
+    }else if(attackAleatories == 5){
         attackSelectPc = 'Abbysm attack';
     }else if (attackAleatories == 6){
         attackSelectPc = 'Wather attack';
@@ -148,20 +149,48 @@ function attackAleatorieEnemy(){
     }else{
         attackSelectPc = 'Geo attack';
     };   
-    createElements();
+    Combat();
 };
 //Notifications of the comvbat in HTML 
 function createElements(){
     let notifications = document.getElementById('notifications');
     let pagraph = document.createElement('p');
     let pagraphEnemy = document.createElement('p');
+    let Champ = document.createElement('p');
+
     pagraph.innerHTML = 'You tell your creature that attack with ' + attackSelectPj;
     pagraphEnemy.innerHTML = 'The enemy attacks with '+ attackSelectPc;
+    Champ.innerHTML = 'The combat is fhinishes ' + winners; 
+
 
     notifications.appendChild(pagraph);
     notifications.appendChild(pagraphEnemy);
+    notifications.appendChild(Champ);
     
-}
+};
+// Combat of the game and logicstic of elements 
+function Combat(){
+    if (attackSelectPc == attackSelectPj){
+        winners = 'The combats is very hard the attacks is not efective';
+    }else if(attackSelectPc == 'Electric attack' && attackSelectPj == 'Fire attack'){  
+        winners ='Reaction of Electrocharged you lost 1 live';
+    }else if (attackSelectPc == 'Snow attack' && attackSelectPj == 'Luminous attack'){
+        winners = 'The Lominus neutralizes your attack of snow you lost 1 live'; 
+    }else if(attackSelectPc == 'Fire attack' && attackSelectPj == 'Abbysm attack'){
+        winners ='Your fire attack is very efective enemy lost 1 live'; 
+    }else  if (attackSelectPc == 'Luminous attack' && attackSelectPj == 'Wather attack'){
+        winners ='Your wather attack is neutral against th e luminus attak to enamy is tie'; 
+    }else if(attackSelectPc == 'Abbysm attack' && attackSelectPj == 'Plant attack' ){
+        winners ='The enemy attack is very efective against your plant attak is withered you lost 1 live'; 
+    }else if(attackSelectPc == 'Wather attack' && attackSelectPj == 'Geo attack'){
+        winners ='Your attack not is very efective against the wather attack you los 1 live';
+    }else if(attackSelectPc == 'Plant attack' && attackSelectPj == 'Electric attack'){
+        winners ='The electric attack is very efective against plant attack the enemy lost 1 live'; 
+    }else {
+        winners ='The enemy uses strong attack break your attack snow you lost 1 live'; 
+    }
+    createElements();
+};
 
 
 
