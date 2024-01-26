@@ -29,6 +29,8 @@ function starGame(){
     let attackGeo = document.getElementById('attack-geo');
     attackGeo.addEventListener('click', geoAttack);
 
+    let reset = document.getElementById('reload');
+    reset.addEventListener('click', rechargeGame)
     
 
 };
@@ -169,6 +171,7 @@ function createElements(){
     notifications.appendChild(pagraphEnemy);
     notifications.appendChild(Champ);
     
+
 };
 // Combat of the game and logicstic of elements 
 function Combat(){
@@ -403,12 +406,34 @@ function checkLives(){
         champion("CONGRATULATIONS YOU WIN")
     };
 };
+// Show the champion of game 
 function champion(checkLivesend){
     let notifications = document.getElementById('notifications');
     let end = document.createElement('h2');
 
     end.innerHTML =  checkLivesend;
     notifications.appendChild(end);
+    let attackElectric = document.getElementById('attack-electric');
+    attackElectric.disabled = true;
+    let attackSnow = document.getElementById('attack-snow');
+    attackSnow.disabled = true;
+    let attackFire = document.getElementById('attack-fire');
+    attackFire.disabled = true;
+    let attackLuminous = document.getElementById('attack-luminous');
+    attackLuminous.disabled = true;
+    let attackAbyss = document.getElementById('attack-abyss');
+    attackAbyss.disabled = true;
+    let attackWather = document.getElementById('attack-wather');
+    attackWather.disabled = true;
+    let attackPlant = document.getElementById('attack-plant');
+    attackPlant.disabled = true;
+    let attackGeo = document.getElementById('attack-geo');
+    attackGeo.disabled = true;
 };
+//Recharge window 
+function rechargeGame(){
+    location.reload();
+};
+
 
 
