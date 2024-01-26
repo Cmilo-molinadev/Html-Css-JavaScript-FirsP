@@ -9,6 +9,11 @@ let NlivesPc = 5;
 
 //Reload all page and start Game 
 function starGame(){
+    let sectionAttack = document.getElementById('Select-attack')
+    sectionAttack.style.display='none';
+    let buttonReload = document.getElementById('reload')
+    buttonReload.style.display='none';
+
     let selectCreature = document.getElementById('Select-a-creauture');
     selectCreature.addEventListener('click', selectCreaturePj);
 
@@ -38,6 +43,11 @@ window.addEventListener('load', starGame);
 
 //Function select creature PJ and select attack 
 function selectCreaturePj(){
+    let sectioncreature = document.getElementById('Select-creature')
+    sectioncreature.style.display='none';
+    let sectionAttack = document.getElementById('Select-attack')
+    sectionAttack.style.display='block';
+
     let electrion = document.getElementById('electrion');
     let snowda = document.getElementById('snowda');
     let firecat = document.getElementById('firecat');
@@ -410,6 +420,8 @@ function checkLives(){
 function champion(checkLivesend){
     let notifications = document.getElementById('notifications');
     let end = document.createElement('h2');
+    let buttonReload = document.getElementById('reload')
+    buttonReload.style.display='block';
 
     end.innerHTML =  checkLivesend;
     notifications.appendChild(end);
