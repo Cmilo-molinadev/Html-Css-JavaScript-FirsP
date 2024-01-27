@@ -1,0 +1,18 @@
+/*The header style , also edit in inspec on browser*/
+#tittle { 
+    background-color: #D6EAF8;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-block: 2.5px solid #2874A6;
+    border-radius: 10px;
+    box-shadow: 8px -5px 8px 2px #85929E;
+}
+/*Selecta font in "https://kinsta.com/blog/web-safe-fonts/#14-franklin-gothic" */
+.tittle1{
+    font-family: Franklin Gothic, fantasy;
+    font-style: inherit;
+}
+
+
