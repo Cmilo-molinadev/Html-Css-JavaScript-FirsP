@@ -2,17 +2,39 @@
 #tittle { 
     background-color: #D6EAF8;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     border-block: 2.5px solid #2874A6;
     border-radius: 10px;
-    box-shadow: 8px -5px 8px 2px #85929E;
+    box-shadow: 8px -5px 8px 2px #7FB3D5;
+    width: 303px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
 }
 /*Selecta font in "https://kinsta.com/blog/web-safe-fonts/#14-franklin-gothic" */
 .tittle1{
     font-family: Franklin Gothic, fantasy;
     font-style: inherit;
+    padding: 9px;
+    margin-top: 36px;
+    margin-bottom: -29px;
+}
+.tittle2{
+    background-color: #D6EAF8;
+    display: flex;
+    align-content: space-around;
+    border-block: 2.5px solid #2874A6;
+    border-radius: 10px;
+    box-shadow: 7px 0px 12px 2px #7FB3D5;
+    width: 267px;
+    height: 36px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
