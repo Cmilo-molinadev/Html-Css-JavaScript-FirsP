@@ -4,14 +4,17 @@
     display: flex;
     flex-direction: column;
     border-block: 2.5px solid #2874A6;
-    border-radius: 10px;
+    border-radius: 305px;
     box-shadow: 8px -5px 8px 2px #7FB3D5;
     width: 303px;
     height: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px;
+    padding: 5px;
+    align-items: center;
+    height: 9vh;
+    width: 100vh;
 }
 /*Selecta font in "https://kinsta.com/blog/web-safe-fonts/#14-franklin-gothic" */
 .tittle1{
@@ -21,6 +24,7 @@
     margin-top: 36px;
     margin-bottom: -29px;
 }
+/* the performance of shadow effects and display flex in only tittle*/
 .tittle2{
     background-color: #D6EAF8;
     display: flex;
@@ -36,5 +40,31 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+/*Use diferent modes of the font for personalize the foother*/
+footer{
+    
+    font-size: 8px;
+    width: 200vh;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #5D6D7E;
+}
+/*Use propieti padding for indicate different size the seccion*/
+#Select-creature{
+    padding-block: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
