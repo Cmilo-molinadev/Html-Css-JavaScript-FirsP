@@ -6,7 +6,7 @@
     border-block: 2.5px solid #2874A6;
     border-radius: 305px;
     box-shadow: 8px -5px 8px 2px #7FB3D5;
-    width: 303px;
+    width: 200px;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     padding: 5px;
     align-items: center;
     height: 9vh;
-    width: 100vh;
+    
 }
 /*Selecta font in "https://kinsta.com/blog/web-safe-fonts/#14-franklin-gothic" */
 .tittle1{
@@ -32,7 +32,7 @@
     border-block: 2.5px solid #2874A6;
     border-radius: 10px;
     box-shadow: 7px 0px 12px 2px #7FB3D5;
-    width: 267px;
+    width: 270px;
     height: 36px;
     justify-content: flex-end;
     align-items: center;
@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    height: auto;
 }
 /*Use diferent modes of the font for personalize the foother*/
 footer{
@@ -61,7 +62,7 @@ footer{
 }
 /*Use propieti padding for indicate different size the seccion*/
 #Select-creature{
-    padding-block: 90px;
+    padding-block: 150px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
