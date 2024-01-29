@@ -117,5 +117,10 @@ img{
 }
 /*Changes in a spaces betwen sections an buttons*/
 #Select-a-creauture{
-    margin-top: -106px;
+    width: 230px;
+    border-radius: 20px;
+    background: transparent;
+    font-family: 'Honk', system-ui;
+    font-size: 27px;
+    margin: -142px 10px 10px 10px;
 }
