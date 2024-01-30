@@ -124,3 +124,23 @@ img{
     font-size: 27px;
     margin: -142px 10px 10px 10px;
 }
+/*Next page*/
+#Select-attack{
+    align-items: center;
+    flex-direction: column;
+}
+#subtittle{
+    font-family: 'Honk', system-ui;
+    margin: 20px 10px 27px 10px;
+    font-size: 58px;
+}
+.butons{
+    background: #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 8px 6px 12px 2px #3771e4;
+    margin: 10px 200px 10px 10px;
+    width: 130px;
+    height: 82px;
+} 

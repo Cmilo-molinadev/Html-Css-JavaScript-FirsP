@@ -46,7 +46,7 @@ function selectCreaturePj(){
     let sectioncreature = document.getElementById('Select-creature')
     sectioncreature.style.display='none';
     let sectionAttack = document.getElementById('Select-attack')
-    sectionAttack.style.display='block';
+    sectionAttack.style.display='flex';
 
     let electrion = document.getElementById('electrion');
     let snowda = document.getElementById('snowda');
