@@ -67,7 +67,7 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     /* gap: inherit; */
-    margin: 0px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     background-color: rgba(66,66,66,.5);
     padding: 0px 1px;
 }
@@ -90,17 +90,57 @@ footer{
     gap: 10px;
     margin: 147px 10px 199px 10px;
 }
-.card-creature{
-    width: 100px;
-    height: 100px;
+.card-creature {
+    width: 152px;
+    height: 103px;
     padding: 10px;
-    background-color: #7FB3D5;
+    background-color: #ffff;
     margin: 10px;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid #6495ED;
 }
 #selected-creature{
     font-family: 'Honk', system-ui;
     font-size: 24px;
+    margin-bottom: -66px;
 }
 input{
     display: none;
 }
+img{
+    width: 90px;
+    height: 90px;
+    background: none;
+}
+/*Changes in a spaces betwen sections an buttons*/
+#Select-a-creauture{
+    width: 230px;
+    border-radius: 20px;
+    background: transparent;
+    font-family: 'Honk', system-ui;
+    font-size: 27px;
+    margin: -142px 10px 10px 10px;
+}
+/*Next page*/
+#Select-attack{
+    align-items: center;
+    flex-direction: column;
+}
+#subtittle{
+    font-family: 'Honk', system-ui;
+    margin: 20px 10px 27px 10px;
+    font-size: 58px;
+}
+.butons{
+    background: #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 8px 6px 12px 2px #3771e4;
+    margin: 10px 200px 10px 10px;
+    width: 130px;
+    height: 82px;
+} 

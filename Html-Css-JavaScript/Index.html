@@ -28,21 +28,45 @@
     <section id="Select-creature">
         <h2 id="selected-creature">Select your creature</h2>
         <div id="Creatures">
-        <label  class="card-creature" for="electrion">Electrion</label>
+        <label  class="card-creature" for="electrion">
+           <p id="name">Electrion</p>
+           <img src="./assets/a0892090-549f-4add-838d-c2554a993679.jpg" alt="Electrion"   >
+        </label>
         <input type="radio" name="Creature"  id="electrion"></input>
-        <label  class="card-creature" for="snowda">Snowda</label>
+        <label  class="card-creature" for="snowda">
+           <p id="name">Snowda</p> 
+           <img src="./assets/Casey's Official Pokemon Mascots Ideas_ Vanillite.jpg" alt="Snowda">
+        </label>
         <input type="radio" name="Creature"  id="snowda"></input>
-        <label  class="card-creature" for="firecat">Firecat</label>
+        <label  class="card-creature" for="firecat">
+            <p id="name">Firecat</p>
+            <img src="./assets/Darumaka Pokédex_ stats, moves, evolution & locations.jpg" alt="Firecat">
+        </label>
         <input type="radio" name="Creature"  id="firecat"></input>
-        <label  class="card-creature" for="fairy">Fairy</label>
+        <label  class="card-creature" for="fairy">
+            <p id="name">Fairy</p>
+            <img src="./assets/Casey's Official Pokemon Mascots Ideas_ Ribombee.jpg" alt="Fairy">
+        </label>
         <input type="radio" name="Creature"  id="fairy"></input>
-        <label  class="card-creature" for="darkghost">Darkghost</label>
+        <label  class="card-creature" for="darkghost">
+            <p id="name">Darkghost</p>
+            <img src="./assets/dbf0d178-b561-400c-9769-7ed12fe2e3ec.jpg" alt="Darkghost">
+        </label>
         <input type="radio" name="Creature"  id="darkghost"></input>
-        <label  class="card-creature" for="octopuset">Octopuset</label>
+        <label  class="card-creature" for="octopuset">
+            <p id="name">Octopuset</p>
+            <img src="./assets/194 Wooper.jpg" alt="Octopuset">
+        </label>
         <input type="radio" name="Creature"  id="octopuset"></input>
-        <label  class="card-creature" for="talltree">Talltree</label>
+        <label  class="card-creature" for="talltree">
+            <p id="name">Talltree</p>
+            <img src="./assets/Cherubi Pokédex_ stats, moves, evolution & locations.jpg" alt="Talltree">
+        </label>
         <input type="radio" name="Creature"  id="talltree"></input>
-        <label  class="card-creature" for="mrfigth">Mr. Figth</label>
+        <label  class="card-creature" for="mrfigth">
+            <p id="name">Mr. Figth</p>
+            <img src="./assets/Casey's Official Pokemon Mascots Ideas_ Roggenrola.jpg" alt="Mr. Figth">
+        </label>
         <input type="radio" name="Creature"  id="mrfigth"></input>
         </div>
         <!--Electrion -> Electric
@@ -58,32 +82,33 @@
 
     <!--The Third "Section": here is the select attack with all attacks and his types-->
     <section id="Select-attack">
-        <p>Your creature is <span id="creature-pj"></span> and have <span id="lives">5</span> lives</p>
-        <p>The enemy creature is <span id="creture-pc"></span> and have <span id="lives-enemy">5</span> lives</p>
-        <h2>Select your Attack</h2>
-        <p id="attack-buttons">
-            <button id="attack-electric">Electric ⚡</button>
-            <button id="attack-snow">Snow ❄️</button>
-            <button id="attack-fire">Fire 🔥</button>
-            <button id="attack-luminous">Luminous ⭐</button>
-            <button id="attack-abyss">Abyss 🌑</button>
-            <button id="attack-wather">Wather 💧</button>
-            <button id="attack-plant">Plant 🍀</button>
-            <button id="attack-geo">Geo 🪨</button>
-        </p>
-    </section>
-
-    <!--This seccion is very special, this seccion is where we can see the notifications
-    or the development of combat only edit with JavaScript-->
-    <section id="notifications">
+        <h2 id="subtittle">Select your Attack</h2>
         
-    </section>
+        <div id="attack-buttons">
+            <button class="butons"   id="attack-electric">Electric ⚡</button>
+            <button class="butons"   id="attack-snow">Snow ❄️</button>
+            <button class="butons"   id="attack-fire">Fire 🔥</button>
+            <button class="butons"   id="attack-luminous">Luminous ⭐</button>
+            <button class="butons"   id="attack-abyss">Abyss 🌑</button>
+            <button class="butons"   id="attack-wather">Wather 💧</button>
+            <button class="butons"   id="attack-plant">Plant 🍀</button>
+            <button class="butons"   id="attack-geo">Geo 🪨</button>
+        </div>
 
-    <!--Finaly game restar again-->
-    <section id="empy">
-        <button id="reload">Restar</button>
-    </section>
-    
+        <div>
+            <!--This seccion is very special, this seccion is where we can see the notifications
+            or the development of combat only edit with JavaScript-->
+            <section id="notifications"></section>
+            <!--Finaly game restar again-->
+            <section id="empy">
+                <button id="reload">Restar</button>
+            </section>
+        </div>
+        <div>
+            <p>Your creature is <span id="creature-pj"></span> and have <span id="lives">5</span> lives</p>
+            <p>The enemy creature is <span id="creture-pc"></span> and have <span id="lives-enemy">5</span> lives</p>
+        </div>
+    </section>  
 </body>
 <footer>
     <h3>Created By :  GitHub <a href="https://github.com/Cmilo-molinadev"> @Cmilo-molinadev</a></h3>
