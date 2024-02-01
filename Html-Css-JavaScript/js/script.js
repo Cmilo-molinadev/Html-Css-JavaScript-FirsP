@@ -167,19 +167,28 @@ function attackAleatorieEnemy(){
 };
 //Notifications of the comvbat in HTML 
 function createElements(){
-    let notifications = document.getElementById('notifications');
+    let notifications = document.getElementById('point');
+    let pointPlayer = document.getElementById('point-player');
+    let pointEnemy = document.getElementById('point-enemy');
+
+   
     let pagraph = document.createElement('p');
     let pagraphEnemy = document.createElement('p');
-    let Champ = document.createElement('h2');
-
-    pagraph.innerHTML = 'You tell your creature that attack with ' + attackSelectPj;
-    pagraphEnemy.innerHTML = 'The enemy attacks with '+ attackSelectPc;
-    Champ.innerHTML =  winners; 
 
 
-    notifications.appendChild(pagraph);
-    notifications.appendChild(pagraphEnemy);
-    notifications.appendChild(Champ);
+
+    //let pagraph = document.createElement('p');
+    //let pagraphEnemy = document.createElement('p');
+    //let Champ = document.createElement('h2');
+
+    pagraph.innerHTML = attackSelectPj;
+    pagraphEnemy.innerHTML =  attackSelectPc;
+    notifications.innerHTML =  winners; 
+
+
+    pointPlayer.appendChild(pagraph);
+    pointEnemy.appendChild(pagraphEnemy);
+    
     
 
 };
@@ -418,13 +427,14 @@ function checkLives(){
 };
 // Show the champion of game 
 function champion(checkLivesend){
-    let notifications = document.getElementById('notifications');
-    let end = document.createElement('h2');
-    let buttonReload = document.getElementById('reload')
-    buttonReload.style.display='block';
+    let notifications = document.getElementById('point');
+    
+    let buttonReload = document.getElementById('reload');
+    buttonReload.style.display='flex';
+    
 
-    end.innerHTML =  checkLivesend;
-    notifications.appendChild(end);
+    notifications.innerHTML =  checkLivesend;
+    
     let attackElectric = document.getElementById('attack-electric');
     attackElectric.disabled = true;
     let attackSnow = document.getElementById('attack-snow');

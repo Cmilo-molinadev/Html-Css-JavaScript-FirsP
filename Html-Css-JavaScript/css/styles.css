@@ -140,7 +140,71 @@ img{
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 8px 6px 12px 2px #3771e4;
-    margin: 10px 200px 10px 10px;
-    width: 130px;
-    height: 82px;
+    margin: 5px 40px 10px 10px;
+    width: 110px;
+    height: 60px;
 } 
+#notifications{
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-right: 0px;
+    flex-direction: column;
+}
+#reload{
+    width: 200px;
+    border-radius: 10px;
+    background: transparent;
+    /* display: flex; */
+    justify-content: center;
+    box-shadow: 8px 6px 12px 2px #3771e4;
+    font-family: 'Honk', system-ui;
+    font-size: 30px;
+}
+.attacks-vs{
+    display: grid;
+    grid-template-columns: 260px 260px;
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-items: start; */
+    gap: 260px;
+}
+.game{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    margin-bottom: 10px;
+    border: 5px solid #6495ED;
+    border-radius: 36px;
+    box-shadow: 14px 14px 12px 2px #3771e4;
+    gap: 0px;
+    font-family: 'Honk', system-ui;
+    font-size: 33px;
+}
+#lives, #lives-enemy{
+    padding: 10px;
+    margin: 0px 0px;
+    font-size: 24px;
+}
+#creature-pj, #creture-pc{
+    padding: 10px;
+    margin: 0px 0px;
+    font-size: 24px;
+}
+/*@media(max-width:360px){
+    #Creatures{
+        flex-direction: column;
+    }
+}*/
+input{
+    display: none;
+}
+input:checked + label {
+    background-color: transparent;
+}
