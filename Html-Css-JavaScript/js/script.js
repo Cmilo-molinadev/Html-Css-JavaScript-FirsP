@@ -457,5 +457,3 @@ function rechargeGame(){
     location.reload();
 };
 
-
-
